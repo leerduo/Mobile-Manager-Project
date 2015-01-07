@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"    
+    >
+
+  <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2FD5B9" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择联系人"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        
+
+        <ImageView
+            android:onClick="back"
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_tab_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/our_group_back_on" />
+    </RelativeLayout>
+    
+  <ListView
+      	android:layout_marginTop="2dp"
+     	 android:padding="5dp"
+        android:id="@+id/list_select_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="afterDescendants"
+        android:divider="#cccccc"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false" />
+  
+    
+ 
+
+</LinearLayout>

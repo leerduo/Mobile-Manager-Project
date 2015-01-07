@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:owndefine="http://schemas.android.com/apk/res/com.ustc.mobilemanager"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0eb"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2FD5B9"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+   <com.ustc.mobilemanager.ui.SettingItemView
+       owndefine:title="设置自动更新"
+       owndefine:desc_on="设置自动更新已经开启"
+       owndefine:desc_off="设置自动更新已经关闭"
+       android:id="@+id/siv_update"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+   <com.ustc.mobilemanager.ui.SettingItemView
+       owndefine:title="设置显示号码归属地"
+       owndefine:desc_on="设置显示号码归属地已经开启"
+       owndefine:desc_off="设置显示号码归属地已经关闭"
+       android:id="@+id/siv_show_address"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+   
+    <com.ustc.mobilemanager.ui.SettingClickView
+       android:id="@+id/scv_changebg"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+    <com.ustc.mobilemanager.ui.SettingItemView
+       owndefine:title="黑名单拦截设置"
+       owndefine:desc_on="黑名单拦截已经开启"
+       owndefine:desc_off="黑名单拦截已经关闭"
+       android:id="@+id/siv_callsms_safe"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+     <com.ustc.mobilemanager.ui.SettingItemView
+       owndefine:title="程序锁设置"
+       owndefine:desc_on="看门狗已经开启"
+       owndefine:desc_off="看门狗已经关闭"
+       android:id="@+id/siv_watchdog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+
+</LinearLayout>

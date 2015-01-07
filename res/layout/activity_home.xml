@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"  
+	 android:background="#f2f0eb"
+    >
+        <TextView
+            android:id="@+id/title"
+            android:background="#2FD5B9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="主页"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+        
+        <com.ustc.mobilemanager.ui.FocusedTextView
+            android:focusableInTouchMode="true" 
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="最新的手机管家,快去下载,下载送iphone6哦,机不可失,失不再来!"
+            />
+        
+        <GridView
+            android:layout_marginTop="15dp"
+            android:id="@+id/list_home" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+           	android:verticalSpacing="5dp" 
+            ></GridView>
+
+</LinearLayout>

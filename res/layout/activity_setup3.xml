@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0eb"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2FD5B9" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置安全号码"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="next"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_tab_bg"
+            android:onClick="back"
+            android:scaleType="centerInside"
+            android:src="@drawable/our_group_back_on" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_content_style"
+        android:drawableLeft="@drawable/common_icon17"
+        android:gravity="center_vertical"
+        android:text="SIM卡变更后,报警短信会发给安全号码"
+        android:textColor="#88000000"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/av_perm_group_phone_calls" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:layout_toRightOf="@id/iv_number"
+            android:background="@null"
+            android:hint="请输入电话号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#b3b3b3" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_login_bg"
+        android:gravity="center"
+        android:onClick="selectContact"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="选择联系人"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+</LinearLayout>
