@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources
+    >
 
-    <string name="app_name">手机管家</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_home">HomeActivity</string>
-    <string name="title_activity_setting">SettingActivity</string>
-    <string name="title_activity_lost_find">LostFindActivity</string>
-    <string name="title_activity_setup1">Setup1Activity</string>
-    <string name="title_activity_setup2">Setup2Activity</string>
-    <string name="title_activity_setup3">Setup3Activity</string>
-    <string name="title_activity_setup4">Setup4Activity</string>
-    <string name="title_activity_base_setup">BaseSetupActivity</string>
-    <string name="title_activity_select_contact">SelectContactActivity</string>
-    <string name="title_activity_atools">AToolsActivity</string>
-    <string name="title_activity_number_address">NumberAddressActivity</string>
-    <string name="title_activity_call_sms_save">CallSmsSaveActivity</string>
-    <string name="title_activity_app_manager">AppManagerActivity</string>
-    <string name="title_activity_task_manager">TaskManagerActivity</string>
-    <string name="title_activity_task_setting">TaskSettingActivity</string>
-    <string name="title_activity_enter_pwd">EnterPwdActivity</string>
-    <string name="title_activity_traffic_manager">TrafficManagerActivity</string>
-    <string name="title_activity_anti_virus">AntiVirusActivity</string>
-    <string name="title_activity_clean_cache">CleanCacheActivity</string>
+    
+    <string translatable="false" name="app_name" >ManagerProV2</string>
+    <string translatable="false" name="hello_world">Hello world!</string>
+  
 
 </resources>
